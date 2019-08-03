@@ -12,7 +12,7 @@ def get_url():
 def doggo(bot, update):
     #Get image url
     url = get_url()
-    #Get the recipient’s ID
+    #Get the recipient ID
     chat_id = update.message.chat_id
     bot.send_photo(chat_id=chat_id, photo=url)
 
